@@ -1,18 +1,15 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./users.json";
-import "./components/UserInfo";
+import users from "./users.json";
+import UserInfo from "./components/UserInfo.js";
+
+const userList = UsersInfo.map((data) => {
+  return (
+    <UserInfo name={data.name} email={data.email} website={data.website}/>
+  );
+});
+    return <div>{userList}</div>;
 
 
-
-const App = () => {
-  const userList = UserInfo.map((this) => (
-    <p>
-      {data.name} - {data.email} - {data.website}
-    </p>
-  ));
-
-  return <p>{userList}</p>
-};
 export default App;
