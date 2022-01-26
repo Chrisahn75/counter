@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./users.json";
 import "./components/UserInfo";
 
-const data = "";
+
 
 const App = () => {
-  const userList = data.map((data) => (
+  const userList = UserInfo.map((this) => (
     <p>
       {data.name} - {data.email} - {data.website}
     </p>
